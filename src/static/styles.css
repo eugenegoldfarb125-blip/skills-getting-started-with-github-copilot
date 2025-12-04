@@ -88,14 +88,28 @@ section h3 {
 }
 
 .participants ul {
-  list-style-position: inside;
-  margin-left: 10px;
+  list-style: none;
+  margin-left: 0;
 }
 
 .participants li {
   margin-bottom: 5px;
   color: #555;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+/* Delete icon styling */
+.delete-icon {
+  cursor: pointer;
+  color: #d32f2f;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.delete-icon:hover {
+  color: #b71c1c;
+}
 }
 
 .form-group {
